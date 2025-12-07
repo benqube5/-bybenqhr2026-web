@@ -8,20 +8,33 @@ export default function ConsultoriaPage() {
       >
         <div className="max-w-5xl w-full rounded-3xl border border-slate-800/70 bg-slate-900/60 shadow-[0_18px_60px_rgba(0,0,0,0.65)] backdrop-blur-xl px-6 py-6 md:px-10 md:py-8">
           {/* HEADER */}
-          <header className="mb-8">
-            <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-2">
-              Consultoría bybenqhr
-            </p>
-            <h1 className="text-2xl md:text-3xl font-semibold leading-tight mb-3">
-              Transformación de People Operations &amp; HR Tech
-            </h1>
-            <p className="text-sm md:text-[15px] text-slate-300 leading-relaxed">
-              Acompaño a equipos de People &amp; Culture y organizaciones que
-              quieren modernizar su operación completa de Recursos Humanos
-              mediante digitalización, automatización, analítica e inteligencia
-              artificial. Trabajo con una mirada end-to-end del área, abarcando
-              cada etapa del ciclo de vida del colaborador.
-            </p>
+          <header className="mb-6 flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+            <div>
+              <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-slate-400 mb-2">
+                Consultoría bybenqhr
+              </p>
+              <h1 className="text-2xl md:text-3xl font-semibold leading-tight mb-3">
+                Transformación de People Operations &amp; HR Tech
+              </h1>
+              <p className="text-sm md:text-[15px] text-slate-300 leading-relaxed">
+                Acompaño a equipos de People &amp; Culture y organizaciones que
+                quieren modernizar su operación completa de Recursos Humanos
+                mediante digitalización, automatización, analítica e
+                inteligencia artificial. Trabajo con una mirada end-to-end del
+                área, abarcando cada etapa del ciclo de vida del colaborador.
+              </p>
+            </div>
+
+            {/* BOTÓN VOLVER AL INICIO */}
+            <div className="md:mt-1">
+              <a
+                href="/"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-600/80 bg-slate-900/70 px-3 py-1.5 text-[11px] md:text-xs text-slate-200 hover:border-slate-300 hover:text-white hover:bg-slate-800 transition"
+              >
+                <span className="text-sm">←</span>
+                <span>Volver al inicio</span>
+              </a>
+            </div>
           </header>
 
           {/* PROBLEMA / CONTEXTO */}
@@ -43,9 +56,7 @@ export default function ConsultoriaPage() {
                 </p>
                 <ul className="space-y-1 text-[13px] text-slate-400 leading-relaxed">
                   <li>· Procesos manuales en todas las áreas de HR.</li>
-                  <li>
-                    · Tareas repetitivas que consumen tiempo y generan errores.
-                  </li>
+                  <li>· Tareas repetitivas que consumen tiempo y generan errores.</li>
                   <li>· Datos fragmentados y reportes poco confiables.</li>
                   <li>· Documentación inconexa y riesgo de compliance.</li>
                   <li>· Poca adopción de IA y automatización.</li>
@@ -58,26 +69,22 @@ export default function ConsultoriaPage() {
                   Qué dice el mercado
                 </p>
                 <ul className="space-y-1 text-[13px] text-slate-400 leading-relaxed">
-                  <li>
-                    · Solo ~24% de las áreas de HR aprovechan sus herramientas
-                    digitales.
-                  </li>
-                  <li>
-                    · El mercado global de HR Tech crecerá de US$24B (2022) a
-                    ~US$40B (2029).
-                  </li>
-                  <li>
-                    · Las empresas que automatizan reducen hasta 26% de horas
-                    administrativas.
-                  </li>
-                  <li>
-                    · La IA en HR acelera decisiones y mejora la experiencia del
-                    colaborador.
-                  </li>
+                  <li>· Solo ~24% de las áreas de HR aprovechan sus herramientas digitales.</li>
+                  <li>· El mercado global de HR Tech crecerá de US$24B (2022) a ~US$40B (2029).</li>
+                  <li>· Las empresas que automatizan reducen hasta 26% de horas administrativas.</li>
+                  <li>· La IA en HR acelera decisiones y mejora la experiencia del colaborador.</li>
                 </ul>
               </div>
             </div>
           </section>
+
+          {/* INDICADOR SCROLL */}
+          <div className="flex flex-col items-center mt-4 animate-pulse">
+            <p className="text-[11px] tracking-widest text-slate-500">
+              Deslizá hacia abajo para ver más
+            </p>
+            <span className="text-slate-400 text-xl animate-bounce">↓</span>
+          </div>
         </div>
       </section>
 
@@ -116,16 +123,9 @@ export default function ConsultoriaPage() {
               <ul className="space-y-1 text-[13px] text-slate-200 leading-relaxed">
                 <li>· Power Automate (cloud &amp; desktop) en procesos clave.</li>
                 <li>· Power Apps para reemplazar planillas y correos.</li>
-                <li>
-                  · SharePoint + Microsoft 365 para estandarizar operaciones.
-                </li>
-                <li>
-                  · Aprobaciones, documentación, alertas y notificaciones
-                  inteligentes.
-                </li>
-                <li>
-                  · Eliminación de tareas manuales y reducción de errores.
-                </li>
+                <li>· SharePoint + Microsoft 365 para estandarizar operaciones.</li>
+                <li>· Aprobaciones, documentación, alertas y notificaciones inteligentes.</li>
+                <li>· Eliminación de tareas manuales y reducción de errores.</li>
               </ul>
             </div>
 
@@ -148,17 +148,20 @@ export default function ConsultoriaPage() {
                 IA aplicada a Recursos Humanos
               </p>
               <ul className="space-y-1 text-[13px] text-slate-200 leading-relaxed">
-                <li>
-                  · Implementación de Copilot y ChatGPT en procesos diarios.
-                </li>
-                <li>
-                  · Diseño de agentes internos para tareas operativas
-                  recurrentes.
-                </li>
+                <li>· Implementación de Copilot y ChatGPT en procesos diarios.</li>
+                <li>· Diseño de agentes internos para tareas operativas recurrentes.</li>
                 <li>· Automatización asistida por IA.</li>
                 <li>· Buenas prácticas, ética y seguridad en IA.</li>
               </ul>
             </div>
+          </div>
+
+          {/* INDICADOR SCROLL */}
+          <div className="flex flex-col items-center mt-2 animate-pulse">
+            <p className="text-[11px] tracking-widest text-slate-500">
+              Deslizá hacia abajo para ver más
+            </p>
+            <span className="text-slate-400 text-xl animate-bounce">↓</span>
           </div>
         </div>
       </section>
@@ -226,6 +229,14 @@ export default function ConsultoriaPage() {
                 más foco en decisiones, menos en burocracia.
               </span>
             </div>
+          </div>
+
+          {/* INDICADOR SCROLL */}
+          <div className="flex flex-col items-center mt-4 animate-pulse">
+            <p className="text-[11px] tracking-widest text-slate-500">
+              Deslizá hacia abajo para ver más
+            </p>
+            <span className="text-slate-400 text-xl animate-bounce">↓</span>
           </div>
         </div>
       </section>
@@ -328,8 +339,9 @@ export default function ConsultoriaPage() {
             </div>
 
             <div className="text-[11px] text-slate-500">
-              <a href="/" className="hover:text-slate-300 transition">
-                ← Volver al inicio
+              <a href="/" className="inline-flex items-center gap-1 hover:text-slate-300 transition">
+                <span>←</span>
+                <span>Volver al inicio</span>
               </a>
             </div>
           </div>
