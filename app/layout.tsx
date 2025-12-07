@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FloatingContact from "../components/FloatingContact";
 
 export const metadata: Metadata = {
   title: "Benjamín Quiroz | People Operations · HR Tech · Automatización y Analytics",
@@ -101,7 +102,11 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* ⭐ BOTÓN FLOTANTE + FORMULARIO */}
+        <FloatingContact />
+      </body>
     </html>
   );
 }
